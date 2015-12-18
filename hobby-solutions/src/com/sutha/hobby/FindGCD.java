@@ -16,8 +16,7 @@ public class FindGCD {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		int[] intArray = new int[]{1950, 450,50, 75, 100, 2400};
 		
 		System.out.println("GCD of " + Arrays.toString(intArray) + " : " + findGCD(intArray));
