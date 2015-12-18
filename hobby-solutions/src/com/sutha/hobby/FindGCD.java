@@ -21,6 +21,7 @@ public class FindGCD {
 		int[] intArray = new int[]{1950, 450,50, 75, 100, 2400};
 		
 		System.out.println("GCD of " + Arrays.toString(intArray) + " : " + findGCD(intArray));
+		System.out.println("GCD of 4, 6 : " + findGCD(4, 6));
 	}
 	
 	public static int findGCD(int[] values){
@@ -41,6 +42,19 @@ public class FindGCD {
 		}
 		
 		return min;
+	}
+	
+	// find gcd of two numners
+	
+	public static int findGCD(int a, int b){
+		int tmp;
+		while(a%b != 0){
+			tmp = b;
+			b = a%b;
+			a = tmp;
+		}
+		
+		return b;
 	}
 
 }
