@@ -8,6 +8,7 @@ import java.util.Arrays;
 /**
  * @author suthagaran
  *
+ *This is a sample solution to find the GCD of an array of integers.
  */
 public class FindGCD {
 
@@ -19,7 +20,7 @@ public class FindGCD {
 
 		int[] intArray = new int[]{1950, 450,50, 75, 100, 2400};
 		
-		System.out.println("GCD of " + intArray + " : " + findGCD(intArray));
+		System.out.println("GCD of " + Arrays.toString(intArray) + " : " + findGCD(intArray));
 	}
 	
 	public static int findGCD(int[] values){
